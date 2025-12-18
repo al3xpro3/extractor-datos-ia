@@ -1,0 +1,20 @@
+[theme]
+primaryColor = "#FF6B6B"
+backgroundColor = "#0E1117"
+secondaryBackgroundColor = "#262730"
+textColor = "#FAFAFA"
+font = "sans serif"
+
+[client]
+showErrorDetails = false
+toolbarMode = "viewer"
+
+[logger]
+level = "error"
+
+[server]
+# ⚡ SIN AUTENTICACIÓN - Acceso público directo
+headless = true
+enableCORS = false
+enableXsrfProtection = false
+
