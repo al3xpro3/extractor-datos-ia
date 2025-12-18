@@ -6,7 +6,8 @@ import io
 from PIL import Image
 
 # Configuración de la IA
-genai.configure(api_key="AIzaSyD7by2grJUWEGZ-H_N1p3EMjVsceKKb7eY")
+api_key = st.secrets.get("api_key", "AIzaSyD7by2grJUWEGZ-H_N1p3EMjVsceKKb7eY")
+genai.configure(api_key=api_key)
 model = genai.GenerativeModel('gemini-1.5-flash')
 
 # ⚡ CONFIGURACIÓN: Sin necesidad de login, acceso público directo
